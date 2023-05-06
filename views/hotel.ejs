@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+</head>
+<style>
+    
+body {
+	background-image: url('https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2017/02/Photoshop-Replace-Background-Featured.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5');
+	background-size: cover;
+	/* background-position: center; */
+}.title{
+  color: black;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    /* border-color: black ;
+     border-width: 70px; */
+  }
+  
+  .images img {
+    /* border-color: black ; */
+    transition: transform .2s;
+   
+    width: 90%;
+    height: 90%;
+    /* object-fit: cover; */
+    padding: 5px;
+  }
+  .zoom img {
+  transition: transform 0.5s ease;
+}
+
+.zoom:hover img {
+  transform: scale(1.2);
+}
+
+
+
+  
+  .nav-link{
+  padding: 0.25rem 0;
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 1rem;
+  border-bottom: 0.25rem solid transparent;
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+
+
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-link.active {
+    color: black;
+    border-bottom-color: white;
+}
+
+.btn-success{
+    text-shadow: none;
+}
+
+@media (max-width: 1000px) {
+    .cover-container {
+        max-width: 95vw;
+      }
+}
+  
+
+
+</style>
+<body class="d-flex text-center text-white bg-dark">
+   
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+          <header class="mb-auto">
+              <div>
+                  <h3 class="float-md-start mb-0" style="color: black;text-decoration: solid;font-weight: bold;">Travellers Books</h3>
+                  <nav class="nav nav-masthead justify-content-center float-md-end" >
+                      <a href="/" class="nav-link" aria-current="page" style="color: black; font-size: 20px; font-weight: bold;">Home</a>
+                      <a href="/" class="nav-link active" style="color: black; font-size: 20px; font-weight: bold;">Hotels</a>
+                      <a href="/flight" class="nav-link" style="color: black;font-size: 20px; font-weight: bold; ">Flights</a>
+                      <a href="/campgrounds" class="nav-link" style="color: black; font-size: 20px; font-weight: bold;">Campgrounds</a>
+                      <a class="nav-link" href="/contact" style="color: black; font-size: 20px; font-weight: bold;">About Us</a>
+                      <% if (!currentUser) { %>
+                          <a href="/register" class="nav-link" style="color: black; font-size: 20px; font-weight: bold;">Register</a>
+                          <a href="/login" class="nav-link" style="color: black;font-size: 20px; font-weight: bold; ">login</a>
+                      <% } else {%>
+                          <a href="/logout" class="nav-link" style="color: black; font-size: 20px; font-weight: bold;">logout</a>
+                      <% } %> 
+                  </nav>
+              </div>
+          </header>
+    <div class="title"  >
+        Hotels Booking!
+       
+    </div>
+    <div class="images">   
+    
+    
+    <a href="http://matera-italy.tilda.ws/"class="zoom"><img src="https://www.cssdesignawards.com/cdasites/2023/202303/20230328074629.jpg" alt="" class="4"></a>
+    <a href="https://giogadesign.com/demo/iter/"class="zoom"><img src="https://www.cssdesignawards.com/cdasites/2017/201704/20170401210546.jpg" alt="" class="5"></a>
+    <a href="https://www.hotelzaza.com/"class="zoom"><img src="https://www.cssdesignawards.com/cdasites/2023/202302/20230225182629.jpg" alt="" class="6"></a>
+    <a href="https://mbauisland.com/"class="zoom"><img src="https://www.cssdesignawards.com/cdasites/2023/202302/20230217155853.jpg" alt="" class="7"></a>
+    <a href="https://www.makemytrip.com/"class="zoom"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK39SHNDvPm_hMwWFLgsm394Xlyth-OzKCFA&usqp=CAU" alt="" class="1"></a>
+     <a href="https://www.airbnb.co.in/"class="zoom"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5jf9_zmapoPXxPW28sDn_D2GvjIOUl2giaQ&usqp=CAU" alt="" class="2"></a>
+    <a href="https://www.arishotel.gr/"class="zoom"><img src="https://www.cssdesignawards.com/cdasites/2023/202302/20230215120632.jpg" alt="" class="8"></a>
+    <a href="https://www.hugedomains.com/domain_profile.cfm?d=upbookings.com"class="zoom"><img src="https://www.cssdesignawards.com/cdasites/2014/201404/20140412171648.jpg" alt="" class="9"></a> 
+    <a href="https://www.athenian-yachts.gr/" class="zoom"><img src="https://www.cssdesignawards.com/cdasites/2023/202304/20230410081418.jpg" alt="" ></a> 
+     
+     
+</div>
+<footer class="footer bg-dark py-3 mt-auto">
+  <div class="container">
+      <span class="text-muted"style="color: aliceblue; text-align: center;">&copy; TravellersBook 2024</span>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"></script>
+</body>
+</html>

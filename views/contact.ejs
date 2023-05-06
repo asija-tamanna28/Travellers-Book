@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/about.css" />
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Travellers Books | About</title>
+</head>
+<style>
+	@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  padding: 0;
+}
+.about {
+  padding: 2rem 0rem;
+}
+.upper,
+.lower {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#logo {
+  width: 70%;
+}
+.image {
+  background-image: url("https://cdn.dribbble.com/users/438257/screenshots/4639997/__-1_1_still.gif?compress=1&resize=400x300&vertical=top");
+  background-size: cover;
+  width: 36rem;
+  height: 28rem;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+}
+.camp {
+  position: relative;
+  top: 2.6rem;
+  left: 7.3rem;
+}
+#tent {
+  width: 30%;
+}
+#fire {
+  width: 15%;
+  position: relative;
+  top: 1rem;
+  right: 1rem;
+}
+.info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0rem 2rem;
+  border-radius: 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+/* .info:hover{
+  transform: scale(1.1);
+} */
+.info h1 {
+  font-family: "Lilita One", cursive;
+  font-size: 3rem;
+  font-weight: lighter;
+  margin-bottom: 0rem;
+}
+
+.yelp {
+  color: #e85d04;
+}
+
+.head1 {
+  text-decoration: white;
+}
+.info p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+}
+.slider {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+.slider img {
+  width: 36rem;
+  height: 28rem;
+  border-radius: 50%;
+}
+
+footer {
+  background: black;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+footer .content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 30px 40px 40px 40px;
+}
+footer .content .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.content .top .logo-details {
+  color: #fff;
+  font-size: 30px;
+}
+.content .top .media-icons {
+  display: flex;
+}
+.content .top .media-icons a {
+  height: 40px;
+  width: 40px;
+  margin: 0 8px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.top .media-icons a:nth-child(1) {
+  background: #4267b2;
+}
+.top .media-icons a:nth-child(1):hover {
+  color: #4267b2;
+  background: #fff;
+}
+.top .media-icons a:nth-child(2) {
+  background: #1da1f2;
+}
+.top .media-icons a:nth-child(2):hover {
+  color: #1da1f2;
+  background: #fff;
+}
+.top .media-icons a:nth-child(3) {
+  background: #e1306c;
+}
+.top .media-icons a:nth-child(3):hover {
+  color: #e1306c;
+  background: #fff;
+}
+.top .media-icons a:nth-child(4) {
+  background: #0077b5;
+}
+.top .media-icons a:nth-child(4):hover {
+  color: #0077b5;
+  background: #fff;
+}
+.top .media-icons a:nth-child(5) {
+  background: #ff0000;
+}
+.top .media-icons a:nth-child(5):hover {
+  color: #ff0000;
+  background: #fff;
+}
+
+footer .content {
+  border-bottom: 1px solid white;
+}
+footer .content .link-boxes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .content .link-boxes .box {
+  width: calc(100% / 5 - 10px);
+}
+.content .link-boxes .box .link_name {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  position: relative;
+}
+.link-boxes .box .link_name::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 35px;
+  background: #fff;
+}
+.content .link-boxes .box li {
+  margin: 6px 0;
+  list-style: none;
+}
+.content .link-boxes .box li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.4s ease;
+}
+.content .link-boxes .box li a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+.content .link-boxes .input-box {
+  margin-right: 55px;
+}
+.link-boxes .input-box input {
+  height: 40px;
+  width: calc(100% + 55px);
+  outline: none;
+  border: 2px solid #afafb6;
+  background: black;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 5px;
+}
+.link-boxes .input-box input::placeholder {
+  color: #afafb6;
+  font-size: 16px;
+}
+.link-boxes .input-box input[type="button"] {
+  background: #fff;
+  color: #140b5c;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 4px 0;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.input-box input[type="button"]:hover {
+  opacity: 1;
+}
+footer .bottom-details {
+  width: 100%;
+  background: black;
+}
+footer .bottom-details .bottom_text {
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a {
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.bottom-details .bottom_text a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+.bottom-details .bottom_text a {
+  margin-right: 10px;
+}
+@media (max-width: 900px) {
+  footer .content .link-boxes {
+    flex-wrap: wrap;
+  }
+  footer .content .link-boxes .input-box {
+    width: 40%;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 700px) {
+  footer {
+    position: relative;
+  }
+  .content .top .logo-details {
+    font-size: 26px;
+  }
+  .content .top .media-icons a {
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+    line-height: 35px;
+  }
+  footer .content .link-boxes .box {
+    width: calc(100% / 3 - 10px);
+  }
+  footer .content .link-boxes .input-box {
+    width: 60%;
+  }
+  .bottom-details .bottom_text span,
+  .bottom-details .bottom_text a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 520px) {
+  footer::before {
+    top: 145px;
+  }
+  footer .content .top {
+    flex-direction: column;
+  }
+  .content .top .media-icons {
+    margin-top: 16px;
+  }
+  footer .content .link-boxes .box {
+    width: calc(100% / 2 - 10px);
+  }
+  footer .content .link-boxes .input-box {
+    width: 100%;
+  }
+}
+
+/* ------------------------------------ */
+@media (max-width: 768px) {
+  .upper {
+    flex-direction: column;
+    margin-bottom: 0rem;
+  }
+  #logo {
+    width: 50%;
+  }
+  .image {
+    width: 18rem;
+    height: 14rem;
+  }
+  .camp {
+    top: 1.2rem;
+    left: 3rem;
+  }
+  .info {
+    width: 85%;
+    padding: 0rem 1.7rem;
+  }
+  .info h1 {
+    font-size: 2rem;
+  }
+  .info p {
+    font-size: 1rem;
+  }
+  .slider {
+    justify-content: center;
+    padding-top: 2rem;
+  }
+  .slider img {
+    width: 18rem;
+    height: 14rem;
+  }
+  .lower {
+    flex-direction: column-reverse;
+  }
+  .nav-link{
+  padding: 0.25rem 0;
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 1rem;
+  border-bottom: 0.25rem solid transparent;
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+
+
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-link.active {
+    color: black;
+    border-bottom-color: white;
+}
+
+.btn-success{
+    text-shadow: none;
+}
+
+@media (max-width: 1000px) {
+    .cover-container {
+        max-width: 95vw;
+      }
+}
+
+}
+
+</style>
+
+<body class=" ">
+   
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+        <div>
+            <h3 class="float-md-start mb-0" style="color: black;text-decoration: solid;font-weight: bold; font-size: 50px;" >Travellers Books</h3>
+            <nav class="nav nav-masthead justify-content-center float-md-end" >
+                <a href="/" class="nav-link" aria-current="page" style="color: black; font-size: 20px; font-weight: bold;">Home</a>
+                <a href="/hotel" class="nav-link " style="color: black; font-size: 20px; font-weight: bold;">Hotels</a>
+                <a href="/flight" class="nav-link" style="color: black;font-size: 20px; font-weight: bold; ">Flights</a>
+                <a href="/campgrounds" class="nav-link" style="color: black; font-size: 20px; font-weight: bold;">Campgrounds</a>
+                <a class="nav-link active" href="/contact" style="color: black; font-size: 20px; font-weight: bold;">About Us</a>
+                <% if (!currentUser) { %>
+                    <a href="/register" class="nav-link" style="color: black; font-size: 20px; font-weight: bold;">Register</a>
+                    <a href="/login" class="nav-link" style="color: black;font-size: 20px; font-weight: bold; ">login</a>
+                <% } else {%>
+                    <a href="/logout" class="nav-link" style="color: black; font-size: 20px; font-weight: bold;">logout</a>
+                <% } %> 
+            </nav>
+        </div>
+    </header>
+    <div class="about">
+        <!-- ------------------------------------ -->
+        <div class="upper">
+            <div class="logo">
+                <!-- <img src="/img/logo.gif" alt="" id="logo" /> -->
+                <div class="image">
+                    <div class="camp">
+                        <!-- <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/78235/tent-clipart-md.png" alt="" id="tent" /> -->
+                        <!-- <img src="https://www.icegif.com/wp-content/uploads/2021/11/icegif-1624.gif" alt="" id="fire" /> -->
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <h1>ABOUT <i class="fas fa-fire-alt" style="color: #e85d04;"></i> <span class="yelp" >Travellers Books</span>
+                </h1>
+                <p>
+                  Welcome to our travel website! We are passionate about helping travelers like you explore the world with ease. Our platform offers a wide range of travel options, including hotel and flight bookings, as well as a unique feature that allows users to create and review campgrounds. With our interactive map, you can easily locate your next adventure.
+                  <br>
+                  Join us today and start your journey towards unforgettable experiences!
+                </p>
+            </div>
+        </div>
+        <!-- ------------------------------------ -->
+        <div class="lower">
+            <div class="info">
+                <h1>ABOUT OUR <span class="yelp">TEAM</span></h1>
+                <p>
+                    Our skilled and zealous team constantly works hard to make your experience simple, smooth and delightful.
+                    We are looking forward to make your experience the best, so we would appreciate if you reach out to our team with your suggestions
+                </p>
+            </div>
+            <div class="slider">
+                <img src="https://img.freepik.com/free-vector/night-outdoor-nature-adventure-camping-illustration-cartoon-flat-tourist-camp-with-picnic-spot-tent-among-forest-mountain-landscape_1150-37342.jpg?w=996&t=st=1683363420~exp=1683364020~hmac=56cc7ec5519f49261fae8e827f8ef2cca5c1d4492035a5fdc41134fb6594a457" alt="" id="slider" />
+            </div>
+        </div>
+        <!-- ------------------------------------ -->
+    </div>
+
+    <script src="/js/about.js"></script>
+    <footer>
+        <div class="content">
+            <div class="top">
+                <div class="logo-details">
+                    <i class="fas fa-fire-alt" style="color: #e85d04;"></i>
+                    <span class="logo_name">Travellers Books</span>
+                </div>
+                <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="link-boxes">
+                <ul class="box">
+                    <li class="link_name">Company</li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About us</a></li>
+                    <li><a href="/campgrounds">Get started</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Services</li>
+                    <li><a href="/hotel">View Hotels</a></li>
+                    <li><a href="/flight">View Flights</a></li>
+                    <li><a href="/campgrounds">All Campgrounds</a></li>
+                    <li><a href="/campgrounds/new">New Campground</a></li>
+                    <li><a href="/c">Categories</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Account</li>
+                    <li><a href="/login">Sign-in</a></li>
+                    <li><a href="/register">Join Free</a></li>
+                </ul>
+
+                <ul class="box input-box">
+                    <li class="link_name">About Travellers Books</li>
+                    <li style="color: white;">
+                    I am a travel website that provides booking options for hotels and flights, as well as a user-friendly platform for creating and reviewing campgrounds. Our interactive map makes exploring new places a breeze!
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-details">
+            <div class="bottom_text">
+                <span class="copyright_text">Copyright © 2024 <a href="/">Travellers Books</a>All rights reserved</span>
+                <span class="policy_terms">
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Terms & condition</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+	let images = ['https://img.freepik.com/free-vector/night-outdoor-nature-adventure-camping-illustration-cartoon-flat-tourist-camp-with-picnic-spot-tent-among-forest-mountain-landscape_1150-37342.jpg?w=996&t=st=1683363420~exp=1683364020~hmac=56cc7ec5519f49261fae8e827f8ef2cca5c1d4492035a5fdc41134fb6594a457', 'https://cdn.dribbble.com/users/31348/screenshots/2379727/media/694cfc6c2495757dfd0ca4f0149710e5.jpg?compress=1&resize=800x600&vertical=top', 'https://img.freepik.com/premium-vector/camping-handrawn-illustration_394335-110.jpg?w=740'];
+let slide = document.getElementById('slider');
+const slider = () => {
+    let i = 0;
+    setInterval(
+      function() {
+        i = i < images.length - 1 ? ++i : 0;
+        slide.src = images[i];
+        console.log(i);
+      }, 2000);
+  }
+  slide.addEventListener('load', slider());
+  
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"></script>
+
+
+</html>

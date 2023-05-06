@@ -1,0 +1,22 @@
+<body class="d-flex text-center text-white bg-dark">
+   
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-auto">
+          <div>
+              <h3 class="float-md-start mb-0" style="color: black;text-decoration: solid;font-weight: bold;">Travellers Books</h3>
+              <nav class="nav nav-masthead justify-content-center float-md-end" >
+                  <a href="/" class="nav-link" aria-current="page" style="color: black; font-size: 20px; font-weight: bold;">Home</a>
+                  <a href="/" class="nav-link " style="color: black; font-size: 20px; font-weight: bold;">Hotels</a>
+                  <a href="/flight" class="nav-link" style="color: black;font-size: 20px; font-weight: bold; ">Flights</a>
+                  <a href="/campgrounds" class="nav-link active" style="color: black; font-size: 20px; font-weight: bold;">Campgrounds</a>
+                  <a href="/campgrounds/new" class="nav-link" style="color: black; font-size: 20px; font-weight: bold;">New Campground</a>
+                  <a class="nav-link" href="/contact" style="color: black; font-size: 20px; font-weight: bold;">About Us</a>
+                  <% if (!currentUser) { %>
+                      <a href="/register" class="nav-link" style="color: black; font-size: 20px; font-weight: bold;">Register</a>
+                      <a href="/login" class="nav-link" style="color: black;font-size: 20px; font-weight: bold; ">login</a>
+                  <% } else {%>
+                      <a href="/logout" class="nav-link" style="color: black; font-size: 20px; font-weight: bold;">logout</a>
+                  <% } %> 
+              </nav>
+          </div>
+      </header>
