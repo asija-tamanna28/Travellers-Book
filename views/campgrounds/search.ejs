@@ -117,12 +117,12 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
 .card-text.capitalize{
     text-transform: capitalize;
 }
+
 .btn-outline-success {
     background-color: blue;
     color: white;
     border-color: blue;
   }
-
 .mapboxgl-ctrl-geocoder {
         position: relative;
         display: inline-block;
@@ -168,16 +168,24 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
       .mapboxgl-ctrl-geocoder .suggestions li:hover {
         background-color: #f5f5f5;
       }
+      
 
 
 </style>
 <form class="d-flex" action="/campgrounds/search" role="search" method="GET">
-  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search">
-  <button class="btn btn-outline-success" type="submit">Search</button>
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+    
+    
+  </form>
+  <form action="/campgrounds"method="GET">
+  <a href="/campgrounds" ><button class="btn btn-outline-success">All Campgrounds</button></a>
 </form>
-<hr>
+  
+  <hr>
 <div class="row">
     <% for (let campground of campgrounds) { %>
+         <% if(campground.title.includes(`${myParam}`) ) { %>
       <div class="col-md-4">
         <div class="card mb-3">
           <div class="card-img-top" style="background-image: url('<%= campground.image %>')"></div>
@@ -197,6 +205,7 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
           </div>
         </div>
       </div>
+      <% } %>
     <% } %>
 
   </div>
@@ -211,7 +220,6 @@ crossorigin="anonymous">
 
 <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
     <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.css" type="text/css" />
-
 
 <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
 <script>
@@ -249,8 +257,6 @@ function addNavigationMarker(lngLat, locationName) {
 
 
 
-
-
   
 </script>
-
+<!-- <script src="/javascripts/clusterMap.js"></script> -->

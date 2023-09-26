@@ -4,6 +4,11 @@ module.exports.index = async (req, res) => {
     const campgrounds = await Campground.find({});
     res.render('campgrounds/index', { campgrounds })
 }
+module.exports.search = async (req, res) => {
+    const myParam = req.query.search
+    const campgrounds = await Campground.find({});
+    res.render('campgrounds/search', { campgrounds, myParam })
+}
 
 module.exports.renderNewForm = (req, res) => {
     res.render('campgrounds/new');

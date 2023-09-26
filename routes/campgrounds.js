@@ -9,6 +9,10 @@ const Campground = require('../models/campground');
 router.route('/')
     .get(catchAsync(campgrounds.index))
     .post(isLoggedIn, validateCampground, catchAsync(campgrounds.createCampground))
+    
+router.route('/search')
+    .get(catchAsync(campgrounds.search))
+    .post(isLoggedIn, validateCampground, catchAsync(campgrounds.createCampground))
 
 router.get('/new', isLoggedIn, campgrounds.renderNewForm)
 

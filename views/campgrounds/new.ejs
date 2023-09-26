@@ -1,33 +1,37 @@
 <% layout('layouts/boilerplate')%>
-<div  style="background-image: url(https://img.freepik.com/free-vector/summer-travel-vacation-logo-concept_1308-90764.jpg?w=740&t=st=1683392748~exp=1683393348~hmac=3540ca41afa4ec4f93ef573d2a501e03b4cd7b7ead91d943df37ed382048b693);background-repeat: no-repeat;
-background-position: right;padding top: 10px;background-size: 600px 600px;">
+<div  style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwDGuVV0-9ubys3ghJyiNef9_Ak00554FqPAuOEgEC7vQf6GB_);  background-repeat: no-repeat;
+background-size: cover;">
+    <div class="form-container" style="background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;">
 <div class="row" >
     <h1 class="text-center">New Place</h1>
     <div class="col-6 offset-3">
         <form action="/campgrounds" method="POST" novalidate class="validated-form">
             <div class="mb-3">
-                <label class="form-label" for="title">Title</label>
+                <label class="form-label" for="title">What's the name of the new place?</label>
                 <input class="form-control" type="text" id="title" name="campground[title]" required>
                 <div class="valid-feedback">
                     Looks good!
                 </div>
             </div>
             <div class="mb-3">
-                <label class="form-label" for="location">Location</label>
+                <label class="form-label" for="location">Where is the place located?</label>
                 <input class="form-control" type="text" id="location" name="campground[location]" required>
                 <div class="valid-feedback">
                     Looks good!
                 </div>
             </div>
             <div class="mb-3">
-                <label class="form-label" for="image">Image Url</label>
+                <label class="form-label" for="image">Do you have an image of the place?If so, please provide the URL.</label>
                 <input class="form-control" type="text" id="image" name="campground[image]" required>
                 <div class="valid-feedback">
                     Looks good!
                 </div>
             </div>
             <div class="mb-3">
-                <label class="form-label" for="price">Place Price</label>
+                <label class="form-label" for="price">What is the price of the place?</label>
                 <div class="input-group">
                     <span class="input-group-text" id="price-label">$</span>
                     <input type="text" class="form-control" id="price" placeholder="0.00" aria-label="price"
@@ -39,7 +43,22 @@ background-position: right;padding top: 10px;background-size: 600px 600px;">
             </div>
 
             <div class="mb-3">
-                <label class="form-label" for="description">Description</label>
+                <label class="form-label" for="Category">What type of place is it?</label>
+                <select class="form-select" id="Category" name="campground[Category]" required>
+                    <option value="Restaurant">Hotels</option>
+                    <option value="Museum">Museum</option>
+                    <option value="Park">Park</option>
+                    <option value="Others">Others</option>
+                    
+                </select>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+
+
+            <div class="mb-3">
+                <label class="form-label" for="description">Can you provide a brief description of the place? </label>
                 <textarea class="form-control" type="text" id="description" name="campground[description]"
                     required></textarea>
                 <div class="valid-feedback">
@@ -54,3 +73,5 @@ background-position: right;padding top: 10px;background-size: 600px 600px;">
     </div>
 </div>
 </div>
+</div>
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="91992bc8-5f66-46d5-a300-fb0689813fcb";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
